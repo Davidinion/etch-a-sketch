@@ -1,0 +1,15 @@
+.square {
+	border: 1px solid black;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+}
+
+/*
+#grid-container {
+	margin: 0 auto;
+	width: 640px;
+	height: 640px;
+	border: 1px solid red;
+}*/
