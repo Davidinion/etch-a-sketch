@@ -2,8 +2,6 @@
 //row.classList.add('row');
 
 const div = document.querySelector('#grid-container');
-let squares = document.querySelectorAll(".square");
-
 let rows = 3, columns = 3, rowSelect;
 
 let setGrid = () => {
@@ -25,7 +23,13 @@ let setGrid = () => {
 
 		div.appendChild(row);
 	}
-
 }
 
 setGrid();
+
+let squares = document.querySelectorAll(".square");
+let blue = (e) => e.target.style.backgroundColor = "blue";
+
+for (let i = 0; i < squares.length; i++) {
+  squares[i].addEventListener('mouseover', blue);
+}
