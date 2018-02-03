@@ -2,7 +2,6 @@
 //row.classList.add('row');
 
 const div = document.querySelector('#grid-container');
-let rows = 3, columns = 3, rowSelect;
 
 let setGrid = () => {
 	let length = prompt("Enter a value from 1 to 100", 16);
@@ -28,8 +27,16 @@ let setGrid = () => {
 setGrid();
 
 let squares = document.querySelectorAll(".square");
-let blue = (e) => e.target.style.backgroundColor = "blue";
+let buttonClear = document.querySelector('#clear');
+let buttonRainbow = document.querySelector('#rainbow');
 
-for (let i = 0; i < squares.length; i++) {
-  squares[i].addEventListener('mouseover', blue);
-}
+let rgb = () => parseInt(Math.random() * 255);
+let color = (e) => e.target.style.backgroundColor = 'rgb(0,0,0)';// 'rgb(' + rgb() + ',' + rgb() + ',' + rgb() + ')'
+
+squares.forEach((e) => e.addEventListener('mouseover', color));
+let clear = (e) => squares.forEach((e) => e.style.backgroundColor = 'rgb(255,255,255)');
+
+
+
+
+buttonClear.addEventListener('click', clear);
