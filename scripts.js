@@ -4,21 +4,15 @@ const buttonClear = document.querySelector('#clear');
 const buttonDisco = document.querySelector('#disco');
 
 let setGrid = () => {
-	let length = prompt("Enter a value from 1 to 50", 16);
-
-	while (length > 50 || length < 1) {
-		length = prompt("Please enter only a value from 1 to 50", 16);
-	}
-
 	let children = document.querySelectorAll(".row");
 
 	children.forEach((child) => div.removeChild(child));
 
-	for (let r = 0; r != length; r++) {
+	for (let r = 0; r != 16; r++) {
 		let row = document.createElement("div");
 		row.classList.add("row");
 
-		for (let c = 0; c < length; c++) {
+		for (let c = 0; c < 16; c++) {
 			let col = document.createElement("div");
 			col.classList.add("square");
 			row.appendChild(col);
