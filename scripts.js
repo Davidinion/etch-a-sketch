@@ -1,6 +1,3 @@
-// const row = document.createElement('div');
-//row.classList.add('row');
-
 const div = document.querySelector('#grid-container');
 const colorChoices = document.getElementById("color_choices");
 const buttonClear = document.querySelector('#clear');
@@ -24,7 +21,6 @@ let setGrid = () => {
 		for (let c = 0; c < length; c++) {
 			let col = document.createElement("div");
 			col.classList.add("square");
-			// col.setAttribute("style", "width: " + 640 / length + "px; height: " + 640 / length + "px;");
 			row.appendChild(col);
 		}
 
