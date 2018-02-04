@@ -1,17 +1,35 @@
 <!doctype html>
 
 <html>
-	<head>
-		<title>Etch A Sketch</title>
-		<link rel='stylesheet' href ='styles.css'>
-		<meta charset="utf-8"/>
-	</head>
-	
-	<body>
-		<div id='grid-container'>
-			<button id='clear'>Clear Grid</button>
-			<button id='rainbow'>Rainbow</button>
-		</div>
-		<script src='scripts.js'></script>
-	</body>
+  <head>
+    <title>Etch A Sketch</title>
+    <link rel='stylesheet' href ='styles.css'>
+    <meta charset="utf-8"/>
+  </head>
+  
+  <body>
+    <div id='settings'>
+      <button id='clear'>Clear Grid</button>
+      <button id='disco'>Disco</button>
+
+      <select id="color_choices">
+        <option value="gray" selected="selected">Gray</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+        <option value="red">Red</option>
+        <option value="gray-shade">Gray (Shade)</option>
+        <option value="blue-shade">Blue (Shade)</option>
+        <option value="green-shade">Green (Shade)</option>
+        <option value="purple-shade">Purple (Shade)</option>
+        <option value="red-shade">Red (Shade)</option>
+        <option value="random">Random</option>
+      </select> 
+    </div>
+
+    <div id='grid-container'>
+    </div>
+    <script src='scripts.js'></script>
+  </body>
 </html>
